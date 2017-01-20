@@ -1,0 +1,68 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;    
+}
+
+body {
+    background-color: $body-bg-color;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: $caption-text-color;
+}
+
+video { 
+    width: 100%; 
+    align-content: center;
+}
+
+progress[value] {
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* removes default border in FireFox */
+    border: none;
+    background: transparent; 
+}
+
+
+.container {
+    width: 65%;
+    max-width: 960px;
+    margin: 0 auto; 
+    background-color: $cont-bg-color;
+    
+    @include tablet {
+        width: 85%;
+    }
+    
+    @include phone {
+        width: 95%;
+    }
+    
+}
+
+.captions p {
+    font-size: 1.35em;
+    line-height: 1.35;
+    padding: 0 5%;
+    
+    @include phone {
+        font-size: 1.1em;
+    }
+}
+
+.highlight {
+    color: $highlight-color;
+}
+
+.hidden {
+    display: none; 
+}
+
+.clearfix::after,
+.clearfix::before {
+    content: "";
+    display: table; 
+    clear: both; 
+}
