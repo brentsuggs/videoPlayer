@@ -42,14 +42,15 @@ function getProgress(current, duration) {
 }
 
 //set background of the playPauseBtn on toggle 
-<<<<<<< HEAD
+
 function setPauseIcon() {
     playPauseBtn.css('background-image', "url('../video_player_v2/icons/pause-icon.png')"); 
 }
 
 function setPlayIcon() {
     playPauseBtn.css('background-image', "url('../video_player_v2/icons/play-icon.png')"); 
-=======
+}
+
 function videoPlay() {
     video.play(); 
     playPauseBtn.css('background-image', "url('../icons/pause-icon.png')"); 
@@ -58,7 +59,6 @@ function videoPlay() {
 function videoPause() {
     video.pause(); 
     playPauseBtn.css('background-image', "url('../icons/play-icon.png')"); 
->>>>>>> refs/remotes/origin/master
 }
 
 //set current time to 0 for video reset 
